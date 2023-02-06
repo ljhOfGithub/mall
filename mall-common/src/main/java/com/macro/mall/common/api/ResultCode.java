@@ -4,8 +4,8 @@ package com.macro.mall.common.api;
  * 常用API返回对象
  * Created by macro on 2019/4/19.
  */
-public enum ResultCode implements IErrorCode {
-    SUCCESS(200, "操作成功"),
+public enum ResultCode implements IErrorCode {//实现接口的枚举类
+    SUCCESS(200, "操作成功"),//枚举内有名字的元素
     FAILED(500, "操作失败"),
     VALIDATE_FAILED(404, "参数检验失败"),
     UNAUTHORIZED(401, "暂未登录或token已经过期"),

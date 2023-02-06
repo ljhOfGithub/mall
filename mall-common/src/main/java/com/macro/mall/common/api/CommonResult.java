@@ -1,5 +1,5 @@
 package com.macro.mall.common.api;
-
+//针对不同对象，建一个包含请求信息的返回对象，对象类型不同，data类型可能不同
 /**
  * 通用返回对象
  * Created by macro on 2019/4/19.

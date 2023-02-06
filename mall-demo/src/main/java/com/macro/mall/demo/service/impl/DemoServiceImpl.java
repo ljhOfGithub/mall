@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * DemoService实现类
+ * DemoService接口的实现类
  * Created by macro on 2019/4/8.
  */
 @Service
@@ -48,8 +48,8 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public List<PmsBrand> listBrand(int pageNum, int pageSize) {
-        PageHelper.startPage(pageNum, pageSize);
-        return brandMapper.selectByExample(new PmsBrandExample());
+        PageHelper.startPage(pageNum, pageSize);//使用GitHub的PageHelper进行分页，返回List<PmsBrand>
+        return brandMapper.selectByExample(new PmsBrandExample());//验证插件返回的信息正确与否
     }
 
     @Override

@@ -32,14 +32,15 @@ public class DemoController {
     @RequestMapping(value = "/brand/listAll", method = RequestMethod.GET)
     @ResponseBody
     public CommonResult<List<PmsBrand>> getBrandList() {
-        return CommonResult.success(demoService.listAllBrand());
+        return CommonResult.success(demoService.listAllBrand());//CommonResult中的data是demoService.listAllBrand()返回的
+        //类型是List<PmsBrand>
     }
 
     @ApiOperation(value = "添加品牌")
     @RequestMapping(value = "/brand/create", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult createBrand(@Validated @RequestBody PmsBrandDto pmsBrand) {
-        CommonResult commonResult;
+        CommonResult commonResult;//@RequestBody将post请求中的属性设置到PmsBrandDto对象中
         int count = demoService.createBrand(pmsBrand);
         if (count == 1) {
             commonResult = CommonResult.success(pmsBrand);
@@ -55,7 +56,7 @@ public class DemoController {
     @RequestMapping(value = "/brand/update/{id}", method = RequestMethod.POST)
     @ResponseBody
     public CommonResult updateBrand(@PathVariable("id") Long id, @Validated @RequestBody PmsBrandDto pmsBrandDto) {
-        CommonResult commonResult;
+        CommonResult commonResult;//@PathVariable获取url中的{id}
         int count = demoService.updateBrand(id, pmsBrandDto);
         if (count == 1) {
             commonResult = CommonResult.success(pmsBrandDto);
@@ -86,7 +87,7 @@ public class DemoController {
     @ResponseBody
     public CommonResult<CommonPage<PmsBrand>> listBrand(@RequestParam(value = "pageNum", defaultValue = "1") Integer pageNum,
                                                         @RequestParam(value = "pageSize", defaultValue = "3") Integer pageSize) {
-        List<PmsBrand> brandList = demoService.listBrand(pageNum, pageSize);
+        List<PmsBrand> brandList = demoService.listBrand(pageNum, pageSize);//@RequestParam接收get方法的参数，pageNum和pageSize
         return CommonResult.success(CommonPage.restPage(brandList));
     }
 

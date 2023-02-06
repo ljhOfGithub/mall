@@ -4,7 +4,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.data.domain.Page;
 
 import java.util.List;
-
+//使用不同的mybatis的分页插件进行分页
 /**
  * 分页数据封装类
  * Created by macro on 2019/4/19.

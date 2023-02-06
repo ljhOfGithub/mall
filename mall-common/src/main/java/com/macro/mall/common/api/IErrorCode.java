@@ -1,5 +1,5 @@
 package com.macro.mall.common.api;
-
+//自定义返回信息
 /**
  * 常用API返回对象接口
  * Created by macro on 2019/4/19.
