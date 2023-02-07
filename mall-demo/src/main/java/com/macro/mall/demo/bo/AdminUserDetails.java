@@ -3,7 +3,7 @@ package com.macro.mall.demo.bo;
 import com.macro.mall.model.UmsAdmin;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetails;//spring security的类
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -20,7 +20,7 @@ public class AdminUserDetails implements UserDetails {
     }
 
     @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
+    public Collection<? extends GrantedAuthority> getAuthorities() {//继承GrantedAuthority的任意类
         //返回当前用户的权限
         return Arrays.asList(new SimpleGrantedAuthority("TEST"));
     }

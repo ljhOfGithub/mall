@@ -34,7 +34,7 @@ public class RestTemplateDemoController {
     @Value("${host.mall.admin}")
     private String HOST_MALL_ADMIN;
 
-    @ApiOperation("getForEntity url")
+    @ApiOperation("getForEntity url")//获得实体url
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
     @ResponseBody
     public Object getForEntity(@PathVariable Long id) {

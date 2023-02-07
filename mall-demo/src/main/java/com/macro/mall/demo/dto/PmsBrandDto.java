@@ -6,14 +6,14 @@ import io.swagger.annotations.ApiModelProperty;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-
+//dto主要用于远程调用等需要大量传输对象的地方，dao主要用来封装对数据库的访问。
 /**
  * 品牌传递参数
  * Created by macro on 2019/4/8.
  */
 @ApiModel(value = "PmsBrandDto")
 public class PmsBrandDto {
-    @ApiModelProperty(value = "品牌名称",required = true)
+    @ApiModelProperty(value = "品牌名称",required = true)//swagger注解
     @NotNull(message = "名称不能为空")
     private String name;
     @ApiModelProperty(value = "品牌首字母",required = true)
