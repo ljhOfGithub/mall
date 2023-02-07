@@ -1,5 +1,5 @@
 package com.macro.mall.mapper;
-
+//使用同名的xml文件进行MySQL操作
 import com.macro.mall.model.CmsHelpCategory;
 import com.macro.mall.model.CmsHelpCategoryExample;
 import java.util.List;

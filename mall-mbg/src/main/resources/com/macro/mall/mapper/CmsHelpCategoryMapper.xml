@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 映射MySQL的列和对象属性 -->
 <mapper namespace="com.macro.mall.mapper.CmsHelpCategoryMapper">
   <resultMap id="BaseResultMap" type="com.macro.mall.model.CmsHelpCategory">
     <id column="id" jdbcType="BIGINT" property="id" />
@@ -38,6 +39,7 @@
       </foreach>
     </where>
   </sql>
+  <!-- sql片段，类似thymeleaf的片段 -->
   <sql id="Update_By_Example_Where_Clause">
     <where>
       <foreach collection="example.oredCriteria" item="criteria" separator="or">
