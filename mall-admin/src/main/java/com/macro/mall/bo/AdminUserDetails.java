@@ -9,7 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
-
+//后台管理需要管理用户权限
 /**
  * SpringSecurity需要的用户详情
  * Created by macro on 2018/4/26.

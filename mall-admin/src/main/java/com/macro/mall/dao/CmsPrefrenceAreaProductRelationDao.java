@@ -4,7 +4,7 @@ import com.macro.mall.model.CmsPrefrenceAreaProductRelation;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
-
+//接口，在controller中实现
 /**
  * 优选和商品关系自定义Dao
  * Created by macro on 2018/4/26.

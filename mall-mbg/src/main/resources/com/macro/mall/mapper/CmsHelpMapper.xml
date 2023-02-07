@@ -71,6 +71,7 @@
       </foreach>
     </where>
   </sql>
+  <!-- 该表的列 -->
   <sql id="Base_Column_List">
     id, category_id, icon, title, show_status, create_time, read_count
   </sql>
