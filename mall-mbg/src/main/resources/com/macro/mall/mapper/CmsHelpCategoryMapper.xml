@@ -72,6 +72,7 @@
   <sql id="Base_Column_List">
     id, name, icon, help_count, show_status, sort
   </sql>
+  <!-- 实现增删改查 -->
   <select id="selectByExample" parameterType="com.macro.mall.model.CmsHelpCategoryExample" resultMap="BaseResultMap">
     select
     <if test="distinct">

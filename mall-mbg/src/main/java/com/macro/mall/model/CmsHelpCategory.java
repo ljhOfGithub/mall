@@ -2,7 +2,7 @@ package com.macro.mall.model;
 
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
-
+//实体类，用于操作MySQL的表格
 public class CmsHelpCategory implements Serializable {
     private Long id;
 

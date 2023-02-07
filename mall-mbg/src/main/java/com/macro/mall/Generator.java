@@ -8,7 +8,7 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-
+//Mybatis代码生成器Mybatis-Generator
 /**
  * 用于生产MBG的代码
  * Created by macro on 2018/4/26.
