@@ -20,7 +20,7 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
+//配置swagger页面显示内容，demo里面可能无法访问，已经关闭对外swagger-ui.html的访问权限
 /**
  * Swagger基础配置
  * Created by macro on 2020/7/16.

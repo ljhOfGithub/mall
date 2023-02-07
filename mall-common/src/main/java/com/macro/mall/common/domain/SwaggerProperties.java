@@ -8,8 +8,9 @@ import lombok.EqualsAndHashCode;
  * Swagger自定义配置
  * Created by macro on 2020/7/16.
  */
+
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode(callSuper = false)//会生成equals(Object other) 和 hashCode()方法，类似生成getter和setter
 @Builder
 public class SwaggerProperties {
     /**

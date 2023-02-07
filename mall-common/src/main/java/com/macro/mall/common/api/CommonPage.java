@@ -2,7 +2,7 @@ package com.macro.mall.common.api;
 
 import com.github.pagehelper.PageInfo;
 import org.springframework.data.domain.Page;
-
+//处理分页的类
 import java.util.List;
 //使用不同的mybatis的分页插件进行分页
 /**
