@@ -36,8 +36,8 @@ public class CommonPage<T> {
      */
     public static <T> CommonPage<T> restPage(List<T> list) {
         CommonPage<T> result = new CommonPage<T>();
-        PageInfo<T> pageInfo = new PageInfo<T>(list);
-        result.setTotalPage(pageInfo.getPages());
+        PageInfo<T> pageInfo = new PageInfo<T>(list);//使用插件返回list
+        result.setTotalPage(pageInfo.getPages());//设置封装的分页信息
         result.setPageNum(pageInfo.getPageNum());
         result.setPageSize(pageInfo.getPageSize());
         result.setTotal(pageInfo.getTotal());
